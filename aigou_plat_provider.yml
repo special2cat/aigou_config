@@ -1,1 +1,32 @@
+spring:
+  profiles:
+    active:
+    - dev
 
+---
+spring:
+  profiles: dev
+  application:
+    name: AIGOU_PLAT
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7001/euraka
+  instance:
+    prefer-ip-address: true
+server:
+  port: 6699
+
+---
+spring:
+  profiles: test
+  application:
+    name: AIGOU_PLAT
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7001/euraka
+  instance:
+    prefer-ip-address: true
+server:
+  port: 9966
