@@ -21,7 +21,7 @@ server:
 spring:
   profiles: test
   application:
-    name: AIGOU_PLAT
+    name: AIGOU_PLAT_TEST
 eureka:
   client:
     serviceUrl:
